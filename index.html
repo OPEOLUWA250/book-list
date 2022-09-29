@@ -15,23 +15,33 @@
 
 
     <style>
-        @media (min-width: 650px) and (max-width: 1400px) {
+    .container {
+        min-height: calc(100vh - 90px);
+    }
+
+    footer {
+    text-align: center;
+    
+    }
+
+    footer p > a {
+    text-decoration: underline;
+    }
+
+    @media (min-width: 300px) and (max-width: 500px)  {
+        .container h1 {
+            font-size: 2.5rem;
+        }
+    } 
+
+    @media (min-width: 650px) and (max-width: 1400px) {
     body {
         width: 100vw;
     }
 
     .container {
         width: 70vw;
-        min-height: calc(100vh - 90px);
-    }
-
-    footer {
-        text-align: center;
-        
-    }
-
-    footer p > a {
-        text-decoration: underline;
+       
     }
 }
     </style>
